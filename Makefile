@@ -17,10 +17,10 @@ test_clang_opt: test.c
 	clang $(CFLAGS) -O -o test_clang_opt test.c
 
 run: $(EXES)
-		@for exe in $(EXES); do \
-			printf "%s ==>\t" "$$exe"; \
-			./$$exe; \
-		done
+	@for exe in $(EXES); do        \
+		printf "%s ==>\t" "$$exe"; \
+		./$$exe;                   \
+	done
 
 clean:
 	@rm $(EXES)
