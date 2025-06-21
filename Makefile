@@ -1,4 +1,5 @@
-CFLAGS = -Wall -Wextra -std=c99 -Wpedantic
+# Remove the comment in the following line to "fix" the "problem"
+CFLAGS = -Wall -Wextra -std=c99 -Wpedantic # -fwrapv
 EXES = test_gcc_noopt test_gcc_opt test_clang_noopt test_clang_opt
 
 all: $(EXES)
